@@ -52,4 +52,9 @@ abstract class MultiplePermissionHandlerPlatform extends PlatformInterface {
     throw UnimplementedError(
         'requestSiriPermission() has not been implemented.');
   }
+
+  Future<void> requestSpeechPermission() {
+    throw UnimplementedError(
+        'requestSpeechPermission() has not been implemented.');
+  }
 }

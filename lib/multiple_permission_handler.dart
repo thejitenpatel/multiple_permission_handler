@@ -29,4 +29,9 @@ class MultiplePermissionHandler {
     return MultiplePermissionHandlerPlatform.instance
         .requestSiriPermission();
   }
+
+  Future<void> requestSpeechPermission() {
+    return MultiplePermissionHandlerPlatform.instance
+        .requestSpeechPermission();
+  }
 }

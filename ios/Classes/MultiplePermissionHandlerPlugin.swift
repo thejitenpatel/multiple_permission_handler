@@ -20,6 +20,8 @@ public class MultiplePermissionHandlerPlugin: NSObject, FlutterPlugin {
             Permission.reminders.request {}
         case "requestSiriPermission":
             Permission.siri.request {}
+        case "requestSpeechPermission":
+            Permission.speech.request {}
         case "requestMultiplePermissions":
             Permission.notification.request {
                 Permission.photoLibraryPermission.request {}

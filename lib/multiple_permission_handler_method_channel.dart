@@ -51,4 +51,11 @@ class MethodChannelMultiplePermissionHandler
         await methodChannel.invokeMethod("requestSiriPermission");
     return permission;
   }
+
+  @override
+  Future<void> requestSpeechPermission() async {
+    final permission =
+        await methodChannel.invokeMethod("requestSpeechPermission");
+    return permission;
+  }
 }

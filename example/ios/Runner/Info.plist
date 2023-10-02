@@ -32,6 +32,8 @@
 	<string>reminders</string>
 	<key>NSSiriUsageDescription</key>
 	<string>Siri</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Need for speech recognition</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
