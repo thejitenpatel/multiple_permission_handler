@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   void requestPermission() {
-    _multiplePermissionHandlerPlugin.requestMultiplePermissions();
+    _multiplePermissionHandlerPlugin.requestRemindersPermission();
   }
 
   Future<void> initPlatformState() async {

@@ -8,7 +8,8 @@ abstract class MultiplePermissionHandlerPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static MultiplePermissionHandlerPlatform _instance = MethodChannelMultiplePermissionHandler();
+  static MultiplePermissionHandlerPlatform _instance =
+      MethodChannelMultiplePermissionHandler();
 
   /// The default instance of [MultiplePermissionHandlerPlatform] to use.
   ///
@@ -28,13 +29,22 @@ abstract class MultiplePermissionHandlerPlatform extends PlatformInterface {
   }
 
   Future<void> requestNotificationPermission() {
-    throw UnimplementedError('requestNotificationPermission() has not been implemented.');
+    throw UnimplementedError(
+        'requestNotificationPermission() has not been implemented.');
   }
 
   Future<void> requestPhotoLibraryPermission() {
-    throw UnimplementedError('requestPhotoLibraryPermission() has not been implemented.');
+    throw UnimplementedError(
+        'requestPhotoLibraryPermission() has not been implemented.');
   }
+
   Future<void> requestMultiplePermissions() {
-    throw UnimplementedError('requestMultiplePermissions() has not been implemented.');
+    throw UnimplementedError(
+        'requestMultiplePermissions() has not been implemented.');
+  }
+
+  Future<void> requestRemindersPermission() {
+    throw UnimplementedError(
+        'requestRemindersPermissions() has not been implemented.');
   }
 }

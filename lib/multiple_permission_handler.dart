@@ -19,4 +19,9 @@ class MultiplePermissionHandler {
     return MultiplePermissionHandlerPlatform.instance
         .requestMultiplePermissions();
   }
+
+  Future<void> requestRemindersPermission() {
+    return MultiplePermissionHandlerPlatform.instance
+        .requestRemindersPermission();
+  }
 }
