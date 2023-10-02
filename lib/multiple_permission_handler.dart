@@ -34,4 +34,9 @@ class MultiplePermissionHandler {
     return MultiplePermissionHandlerPlatform.instance
         .requestSpeechPermission();
   }
+
+  Future<void> requestAppTrackingPermission() {
+    return MultiplePermissionHandlerPlatform.instance
+        .requestAppTrackingPermission();
+  }
 }

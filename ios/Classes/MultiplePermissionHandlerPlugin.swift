@@ -8,6 +8,7 @@ public class MultiplePermissionHandlerPlugin: NSObject, FlutterPlugin {
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
  
+    
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         switch call.method {
         case "getPlatformVersion":
@@ -22,6 +23,10 @@ public class MultiplePermissionHandlerPlugin: NSObject, FlutterPlugin {
             Permission.siri.request {}
         case "requestSpeechPermission":
             Permission.speech.request {}
+        case "requestAppTrackingPermission":
+            if #available(iOS 14, *) {
+                Permission.appTracking.request {}
+            }
         case "requestMultiplePermissions":
             Permission.notification.request {
                 Permission.photoLibraryPermission.request {}

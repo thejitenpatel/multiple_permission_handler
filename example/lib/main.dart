@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   void requestPermission() {
-    _multiplePermissionHandlerPlugin.requestSpeechPermission();
+    _multiplePermissionHandlerPlugin.requestAppTrackingPermission();
   }
 
   Future<void> initPlatformState() async {

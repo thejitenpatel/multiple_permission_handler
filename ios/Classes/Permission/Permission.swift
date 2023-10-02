@@ -93,7 +93,7 @@ open class Permission {
         case motion
         case mediaLibrary
         case bluetooth
-        case tracking
+        case appTracking
         case faceID
         case siri
         case health
@@ -126,7 +126,7 @@ open class Permission {
                 return "Notification"
             case .locationWhenInUse:
                 return "Location When Use"
-            case .tracking:
+            case .appTracking:
                 return "Tracking"
             case .faceID:
                 return "FaceID"

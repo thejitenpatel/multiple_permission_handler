@@ -58,4 +58,11 @@ class MethodChannelMultiplePermissionHandler
         await methodChannel.invokeMethod("requestSpeechPermission");
     return permission;
   }
+
+  @override
+  Future<void> requestAppTrackingPermission() async {
+    final permission =
+        await methodChannel.invokeMethod("requestAppTrackingPermission");
+    return permission;
+  }
 }
