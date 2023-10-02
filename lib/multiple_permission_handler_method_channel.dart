@@ -44,4 +44,11 @@ class MethodChannelMultiplePermissionHandler
         await methodChannel.invokeMethod("requestRemindersPermission");
     return permission;
   }
+
+  @override
+  Future<void> requestSiriPermission() async {
+    final permission =
+        await methodChannel.invokeMethod("requestSiriPermission");
+    return permission;
+  }
 }

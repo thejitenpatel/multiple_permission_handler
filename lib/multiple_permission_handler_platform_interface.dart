@@ -47,4 +47,9 @@ abstract class MultiplePermissionHandlerPlatform extends PlatformInterface {
     throw UnimplementedError(
         'requestRemindersPermissions() has not been implemented.');
   }
+
+  Future<void> requestSiriPermission() {
+    throw UnimplementedError(
+        'requestSiriPermission() has not been implemented.');
+  }
 }

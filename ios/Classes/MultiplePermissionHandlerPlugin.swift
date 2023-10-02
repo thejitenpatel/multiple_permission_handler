@@ -17,9 +17,9 @@ public class MultiplePermissionHandlerPlugin: NSObject, FlutterPlugin {
         case "requestPhotoLibraryPermission":
             Permission.photoLibraryPermission.request {}
         case "requestRemindersPermission":
-            Permission.reminders.request {
-                
-            }
+            Permission.reminders.request {}
+        case "requestSiriPermission":
+            Permission.siri.request {}
         case "requestMultiplePermissions":
             Permission.notification.request {
                 Permission.photoLibraryPermission.request {}

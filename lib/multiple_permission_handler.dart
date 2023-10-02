@@ -24,4 +24,9 @@ class MultiplePermissionHandler {
     return MultiplePermissionHandlerPlatform.instance
         .requestRemindersPermission();
   }
+
+  Future<void> requestSiriPermission() {
+    return MultiplePermissionHandlerPlatform.instance
+        .requestSiriPermission();
+  }
 }
