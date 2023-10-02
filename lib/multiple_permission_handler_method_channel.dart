@@ -23,4 +23,17 @@ class MethodChannelMultiplePermissionHandler
         await methodChannel.invokeMethod("requestNotificationPermission");
     return permission;
   }
+  
+  @override
+  Future<void> requestPhotoLibraryPermission() async {
+    final permission =
+        await methodChannel.invokeMethod("requestPhotoLibraryPermission");
+    return permission;
+  }
+  @override
+  Future<void> requestMultiplePermissions() async {
+    final permission =
+        await methodChannel.invokeMethod("requestMultiplePermissions");
+    return permission;
+  }
 }

@@ -1,4 +1,3 @@
-
 import 'multiple_permission_handler_platform_interface.dart';
 
 class MultiplePermissionHandler {
@@ -7,6 +6,17 @@ class MultiplePermissionHandler {
   }
 
   Future<void> requestNotificationPermission() {
-    return MultiplePermissionHandlerPlatform.instance.requestNotificationPermission();
+    return MultiplePermissionHandlerPlatform.instance
+        .requestNotificationPermission();
+  }
+
+  Future<void> requestPhotoLibraryPermission() {
+    return MultiplePermissionHandlerPlatform.instance
+        .requestPhotoLibraryPermission();
+  }
+
+  Future<void> requestMultiplePermissions() {
+    return MultiplePermissionHandlerPlatform.instance
+        .requestMultiplePermissions();
   }
 }

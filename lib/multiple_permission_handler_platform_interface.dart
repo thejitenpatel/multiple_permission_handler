@@ -30,4 +30,11 @@ abstract class MultiplePermissionHandlerPlatform extends PlatformInterface {
   Future<void> requestNotificationPermission() {
     throw UnimplementedError('requestNotificationPermission() has not been implemented.');
   }
+
+  Future<void> requestPhotoLibraryPermission() {
+    throw UnimplementedError('requestPhotoLibraryPermission() has not been implemented.');
+  }
+  Future<void> requestMultiplePermissions() {
+    throw UnimplementedError('requestMultiplePermissions() has not been implemented.');
+  }
 }

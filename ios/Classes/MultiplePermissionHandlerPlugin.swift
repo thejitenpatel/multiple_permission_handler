@@ -14,6 +14,13 @@ public class MultiplePermissionHandlerPlugin: NSObject, FlutterPlugin {
             result("iOS " + UIDevice.current.systemVersion)
         case "requestNotificationPermission":
             Permission.notification.request {}
+        case "requestPhotoLibraryPermission":
+            Permission.photoLibraryPermission.request {}
+        case "requestMultiplePermissions":
+            Permission.notification.request {
+                Permission.photoLibraryPermission.request {}
+            }
+            
         default:
             result(FlutterMethodNotImplemented)
         }

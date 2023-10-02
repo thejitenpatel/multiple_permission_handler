@@ -25,8 +25,8 @@ class _MyAppState extends State<MyApp> {
     // initPlatformState();
   }
 
-  void requestNotificationPermission() {
-    _multiplePermissionHandlerPlugin.requestNotificationPermission();
+  void requestPermission() {
+    _multiplePermissionHandlerPlugin.requestMultiplePermissions();
   }
 
   Future<void> initPlatformState() async {
@@ -58,7 +58,7 @@ class _MyAppState extends State<MyApp> {
           child: Text('Running on: $_platformVersion\n'),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () => requestNotificationPermission(),
+          onPressed: () => requestPermission(),
         ),
       ),
     );
